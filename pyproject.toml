@@ -22,9 +22,12 @@ name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
 
-[tool.uv.dev-dependencies]
-ruff = "*"
-pytest = "*"
+# ✅ forma correcta para uv
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+    "pytest",
+]
 
 [tool.ruff]
 line-length = 88
