@@ -22,7 +22,6 @@ name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
 
-# ✅ forma correcta para uv
 [tool.uv]
 dev-dependencies = [
     "ruff",
